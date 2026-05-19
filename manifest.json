@@ -1,0 +1,17 @@
+{
+  "name": "Digital Echoes Money Risk Calculators",
+  "short_name": "DE Calculators",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f172a",
+  "description": "Free calculators for practical money risks.",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

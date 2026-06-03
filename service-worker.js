@@ -1,19 +1,13 @@
-// Digital Echoes calculators v17 service worker.
-// Network-first and clears old caches to prevent stale broken calculator pages.
-const CACHE_NAME = 'de-calculators-v17';
-self.addEventListener('install', event => {
-  self.skipWaiting();
-});
+// Digital Echoes calculators v20: no-cache service worker replacement.
+self.addEventListener('install', event => self.skipWaiting());
 self.addEventListener('activate', event => {
   event.waitUntil(
-    caches.keys()
-      .then(keys => Promise.all(keys.map(key => caches.delete(key))))
+    caches.keys().then(keys => Promise.all(keys.map(key => caches.delete(key))))
+      .then(() => self.registration.unregister())
       .then(() => self.clients.claim())
   );
 });
 self.addEventListener('fetch', event => {
   if (event.request.method !== 'GET') return;
-  event.respondWith(
-    fetch(event.request, { cache: 'no-store' }).catch(() => caches.match(event.request))
-  );
+  event.respondWith(fetch(event.request, { cache: 'no-store' }));
 });

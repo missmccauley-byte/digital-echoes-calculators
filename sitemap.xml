@@ -1,2 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'><url><loc>https://calculators.digitalechoesacademy.com/</loc><priority>1.0</priority></url></urlset>
+<urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'><url><loc>https://calculators.digitalechoesacademy.com/</loc><priority>1.0</priority></url>  <url>
+    <loc>https://calculators.digitalechoesacademy.com/1099-da-zero-missing-cost-basis.html</loc>
+    <priority>0.8</priority>
+  </url>
+</urlset>

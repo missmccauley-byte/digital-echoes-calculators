@@ -1,6 +1,6 @@
-// Digital Echoes calculators v16 service worker.
+// Digital Echoes calculators v17 service worker.
 // Network-first and clears old caches to prevent stale broken calculator pages.
-const CACHE_NAME = 'de-calculators-v16';
+const CACHE_NAME = 'de-calculators-v17';
 self.addEventListener('install', event => {
   self.skipWaiting();
 });
